@@ -1,0 +1,178 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #000f1a;
+}
+
+/* Header */
+
+h1 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 2rem
+}
+
+h1, h3 {
+    text-align: center;
+    color: white;
+}
+
+/* Nav Bar */
+
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    font-size: x-large;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    background: #69b2ff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0;
+
+    border: #69b2ff 8px inset;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    padding: 1rem;
+    font-size: 1.5em;
+
+}
+
+/* Nav Link Edits / Hyperlink Edits */
+
+#navbar ul li a:hover, 
+#navbar ul li a.current {
+    background: #8dc4ff;
+    color: rgb(255, 77, 166);
+}
+
+a:link {
+    color: rgb(255, 77, 166);
+}
+
+a:visited {
+    color: rgb(255, 0, 128);
+}
+
+a:hover {
+    color: white;
+}
+
+/* Showcase Grid */
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.showcase-item {
+    border: #69b2ff 8px outset;
+    border-radius: 15px;
+    background: #69b2ff;
+
+    display: inline-block;
+    text-align: center;
+}
+
+#showcase-box-1 {
+    padding: 1rem;
+}
+
+#showcase-box-2 {
+    padding: 1rem;
+}
+
+#showcase-box-3 {
+    padding: 1rem;
+}
+
+#showcase-box-4 {
+    padding: 1rem;
+}
+
+#showcase-box-5 {
+    margin: 40px;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    border: 8px #69b2ff inset;
+    background-color: #69b2ff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #69b2ff;
+    border: #69b2ff 8px outset;
+
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer p a:link {
+    color: black;
+}
+
+hr {
+    border-color: rgb(255, 77, 166);
+}
+
+/* Media Queries */
+
+@media (max-width: 524px) {
+    section div p {
+        column-count: 1;
+        display: block;
+        font-size: smaller;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width: 525px) and (max-width: 1000px) {
+    section h3 {
+        font-size: large;
+    }
+    
+    section div p {
+        column-count: 1;
+        font-size: large;
+    }
+}
+
+@media (min-width: 1001px) {
+    section h3 {
+        font-size: 40px;
+    }
+
+    section div p {
+        padding: 5px;
+        column-count: 2;
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 30px;
+    }
+}
