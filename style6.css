@@ -1,0 +1,162 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #000f1a;
+}
+
+/* Header */
+
+h1 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 2rem
+}
+
+h1, h3 {
+    text-align: center;
+    color: white;
+}
+
+/* Nav Bar */
+
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    background: #69b2ff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0;
+
+    border: #69b2ff 8px inset;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    padding: 1rem;
+    font-size: 1.5em;
+
+}
+
+/* Nav Link Edits / Hyperlink Edits */
+
+#navbar ul li a:hover, 
+#navbar ul li a.current {
+    background: #8dc4ff;
+    color: rgb(255, 77, 166);
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: rgb(255, 77, 166);
+}
+
+/* Form */
+
+form {
+    color: white;
+    font-size: 1.6rem;
+}
+
+input, select, textarea {
+    font-size: 1.6rem;
+}
+
+/* Thanks for Playing GIF */
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    background-color: #69b2ff;
+    border: #69b2ff 8px outset;
+
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer p a:link {
+    color: white;
+}
+
+hr {
+    border-color: rgb(255, 77, 166);
+}
+
+/* Bibliography */
+
+section ul li {
+    font-size: 30px;
+    color: white;
+}
+
+section ul li a {
+    color: white;
+}
+
+/* Media Queries */
+
+@media (max-width: 524px) {
+    section div p {
+        column-count: 1;
+        display: block;
+        font-size: smaller;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width: 525px) and (max-width: 799px) {
+    section h3 {
+        font-size: large;
+    }
+    
+    section div p {
+        column-count: 1;
+        font-size: large;
+    }
+}
+
+@media (min-width: 800px) {
+    section h3 {
+        font-size: 40px;
+    }
+
+    section div p {
+        padding: 5px;
+        column-count: 2;
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 30px;
+    }
+}
