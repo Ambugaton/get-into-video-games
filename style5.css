@@ -80,6 +80,10 @@ a:hover {
 
 /* Showcase Grid */
 
+#info-text {
+    text-align: left;
+}
+
 input {
     font-size: xx-large;
 }
