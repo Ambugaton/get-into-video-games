@@ -80,6 +80,10 @@ a:hover {
 
 /* Showcase Grid */
 
+p {
+    text-align: left;
+}
+
 #info-text {
     text-align: left;
 }
