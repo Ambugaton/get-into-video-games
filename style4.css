@@ -97,10 +97,9 @@ input {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
-    text-align: left;
 }
 
-img {
+.showcase-slideshow {
     text-align: center;
 }
 
@@ -111,7 +110,6 @@ img {
     background: #999;
 
     display: inline-block;
-    text-align: left;
     color: white;
     font-size: 30px;
 }
